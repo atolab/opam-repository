@@ -1,0 +1,36 @@
+opam-version: "2.0"
+version:"0.3.0"
+maintainer:   ["angelo@adlink-labs.tech"]
+authors:      ["Angelo Corsaro"]
+homepage:     "https://github.com/atolab"
+bug-reports:  "https://github.com/atolab/apero-core/issues/"
+dev-repo:     "git://github.com/atolab/apero-core.git"
+
+license: "Apache-2.0"
+
+build: [
+  ["jbuilder" "build" "--only" "apero-core" "--root" "." "-j" jobs "@install"]
+]
+
+
+depends: [
+  "dune"
+  "cmdliner"
+  "fmt" 
+  "logs" 
+  "lwt" 
+  "ppx_deriving" 
+  "uuidm" 
+  "lwt_ppx"
+]
+
+synopsis : "OCaml Utility Library"
+description: """
+Apero is collection of OCaml libraries that we use on most of our OCaml code.
+These libraries include monoids, applicative functors, monads as well as
+some extensions to OCaml Pervasives."""
+
+url {
+    http: "https://https://atolab.github.io/opam-repository/src/apero-core-0.3.0.tar.gz"
+    checksum: "187f78ffbd84ce344abbf08051788cc3"
+}
