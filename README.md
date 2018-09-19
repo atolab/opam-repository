@@ -1,5 +1,5 @@
-# opam-repository
-ATO Opam Repository
+# ATOLab Opam Repository
+This is the opam repository that hosts all the open source OCaml packages developed by ADLINK's Advanced Technolgy Office. 
 
 # Configuring the ATO Repository
 The first thing to do is check the repository you have already configured. To do so execute the command:
